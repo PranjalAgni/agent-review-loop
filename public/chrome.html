@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Agent Review Loop</title>
+
+    <link rel="stylesheet" href="/public/chrome.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Agent Review Loop</h1>
+      <span id="session-key"></span>
+    </header>
+
+    <main>
+      <aside>
+        <h2>Feedback</h2>
+        <p>Annotation controls will appear here later.</p>
+        <button id="annotation-toggle" type="button">
+          Enable annotation mode
+        </button>
+
+        <div id="selected-target">
+          <p>No element selected.</p>
+        </div>
+
+        <label for="feedback-input">Feedback</label>
+
+        <textarea
+          id="feedback-input"
+          rows="6"
+          placeholder="Describe what Claude should change..."
+        ></textarea>
+
+        <button id="send-feedback" type="button">Send to Claude</button>
+
+        <p id="feedback-status"></p>
+      </aside>
+
+      <section class="artifact-container">
+        <iframe id="artifact" title="HTML artifact"></iframe>
+      </section>
+    </main>
+
+    <script src="/public/chrome.js"></script>
+  </body>
+</html>
