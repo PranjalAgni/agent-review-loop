@@ -91,6 +91,7 @@ Do not stop after the first feedback batch. Stop only when the feedback comment 
 - Long polling fits agent tools because one HTTP response becomes one tool result.
 - Canonical file paths can provide stable session identity.
 - Feedback should be queued before polling so messages are not lost when no agent is waiting.
+- A http server, a cli and agent harness working together 
 
 ## Current limitations
 
