@@ -100,3 +100,5 @@ Do not stop after the first feedback batch. Stop only when the feedback comment 
 - The browser must currently be refreshed after the artifact changes.
 - SDK injection uses string replacement rather than a full HTML parser.
 - The MVP assumes one active poller per session.
+- Publish and present the final skill at work
+
